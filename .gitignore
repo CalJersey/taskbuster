@@ -4,3 +4,5 @@ taskbuster/settings/__pycache__
 downloads/
 
 
+.coverage
+htmlcov
