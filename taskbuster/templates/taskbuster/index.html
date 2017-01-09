@@ -4,7 +4,7 @@
 {% load tz %}
 {% block head_title %}TaskBuster Django Tutorial{% endblock %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
-{% block content %}
+{% block jumbotron %}
     <div class="jumbotron">
       <div class="container">
         <h1>{% trans "Welcome to TaskBuster!" %}</h1>
@@ -16,9 +16,9 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
+{% endblock %}
+{% block content %}
+  <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <h2 id="local-date">{{today}}</h2>
@@ -38,5 +38,4 @@
            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
-    </div>
 {% endblock %}
